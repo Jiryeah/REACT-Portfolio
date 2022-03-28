@@ -7,7 +7,7 @@
 - [User Story](#User_Story)
 - [Requirements](#Requirements)
 - [Technologies](#Technologies)
-- [Contact](#Contact)
+- [Contact](#Questions)
 
 ### Summary
 
