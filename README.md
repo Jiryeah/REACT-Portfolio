@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-- [Deployed Application](#Deployed-Application)
+- [Deployed Application](#Deployed Application)
 - [Summary](#Summary)
-- [User Story](#User-Story)
+- [User Story](#User Story)
 - [Requirements](#Requirements)
 - [Technologies](#Technologies)
 - [Questions](#Questions)
@@ -13,7 +13,7 @@
 
 I have created this application to not only challenge myself, but to also showcase the work that I have accomplished and the skills that I have learned along the way. This portfolio will continue to evolve and grow as I learn new libraries, frameworks, and new performant methods that allow me to properly convey to the world my contribution to this beautiful industry we call Web Development.
 
-### User-Story
+### User Story
 
 - AS AN employer looking for candidates with experience building single-page applications
 - I WANT to view a potential employee's deployed React portfolio of work samples
@@ -47,7 +47,7 @@ I have created this application to not only challenge myself, but to also showca
 - WHEN I view the footer
 - THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 
-### Deployed-Application
+### Deployed Application
 
 -
 
@@ -64,4 +64,4 @@ I have created this application to not only challenge myself, but to also showca
 ## Questions
 
 - Email: business.faissal@outlook.com
-- [Github] (https://github.com/Jiryeah)
+- Github https://github.com/Jiryeah
