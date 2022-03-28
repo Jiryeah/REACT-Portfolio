@@ -2,12 +2,12 @@
 
 ## Table of Contents
 
-- [Deployed Application](#Deployed-Application)
+- [Deployed Application](#Application)
 - [Summary](#Summary)
 - [User Story](#User-Story)
 - [Requirements](#Requirements)
 - [Technologies](#Technologies)
-- [Questions](#Questions)
+- [Contact](#Contact)
 
 ### Summary
 
@@ -47,7 +47,7 @@ I have created this application to not only challenge myself, but to also showca
 - WHEN I view the footer
 - THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 
-### Deployed-Application
+### Application
 
 -
 
@@ -64,4 +64,4 @@ I have created this application to not only challenge myself, but to also showca
 ## Questions
 
 - Email: business.faissal@outlook.com
-- [Github] (https://github.com/Jiryeah)
+- Github https://github.com/Jiryeah
