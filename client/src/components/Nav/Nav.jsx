@@ -1,10 +1,15 @@
 import React from 'react'
 
+import { images } from '../../constants/'
 import './Nav.scss'
 
 const Nav = () => {
   return (
-    <div>Nav</div>
+    <nav>
+      <div>
+        <img src={images.logo} alt='logo' />
+      </div>
+    </nav>
   )
 }
 
