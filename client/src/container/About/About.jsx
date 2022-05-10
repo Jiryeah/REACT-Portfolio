@@ -1,15 +1,22 @@
 import React, {useEffect, useState} from 'react'
 import { motion } from 'framer-motion';
 
+import { urlFor, client } from '../../client';
+import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
 
-const abouts = [
-  { title: 'Fullstack Development', description: 'Connecting the front and back end together to create well rounded apps.', imgUrl: ''},
-  { title: 'Frontend Development', description: 'Creating user friendly UI/UX to ensure the user is engaged and satisfied.', imgUrl: ''},
-  { title: 'Backend Development', description: 'Initializing logic-first servers and database structures.', imgUrl: ''},
-]
-
 const About = () => {
+  const [abouts, setAbouts] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "abouts"]';
+
+    client.fetch(query).then((data) => {
+      setAbouts(data);
+    });
+  }, []);
+  
+
   return (
     <>
       <h2 className='head-text'>
@@ -17,7 +24,7 @@ const About = () => {
         <br />
         <span>Collaborate</span>
         <br />
-        we create solutions for the
+        we develop solutions for the
         <br/>
         <span>World</span>
       </h2>
@@ -31,7 +38,7 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={about.imgUrl} alt={about.title} />
+            <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
             <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
           </motion.div>
@@ -41,4 +48,8 @@ const About = () => {
   )
 }
 
-export default About
+export default AppWrap(
+  MotionWrap(About, 'app__about'),
+  'about',
+  'app__whitebg',
+);
