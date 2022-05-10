@@ -5,8 +5,8 @@ import { FaLinkedin } from 'react-icons/fa';
 const SocialMedia = () => (
   <div className="app__social">
     <div>
-    </div>
       <BsGithub />
+    </div>
     <div>
       <FaLinkedin />
     </div>
