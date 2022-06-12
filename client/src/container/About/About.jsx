@@ -20,7 +20,7 @@ const About = () => {
   return (
     <>
       <h2 className='head-text'>
-        When we come together and
+        When we come together &
         <br />
         <span>Collaborate</span>
         <br />
