@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={navigation ? 'fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
+      <div className={navigation ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
         <div
           className={
             navigation
@@ -49,12 +49,10 @@ const Navbar = () => {
           }
         >
           <div>
-            {/* had an my-5 */}
             <div className='flex w-full items-center justify-between '>
               <Image src='/../public/assets/navLogo.png' width='100' height='35' alt='/' />
               <div
                 onClick={handleNavigation}
-                // had an mx-4
                 className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
               >
                 <AiOutlineClose />
@@ -64,7 +62,6 @@ const Navbar = () => {
               <p className='w-[85%] md:w-[90%] py-4'>Let's build something legendary together</p>
             </div>
           </div>
-          {/* had an mx-4 */}
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
               <Link href='/'>
