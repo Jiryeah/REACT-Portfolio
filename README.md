@@ -60,6 +60,8 @@ I have created this application to not only challenge myself, but to also showca
 - JavaScript
 - NPM
 - React
+- Next.js
+- Tailwind
 
 ### Contributors
 
