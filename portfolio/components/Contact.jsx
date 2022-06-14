@@ -18,7 +18,7 @@ const Contact = () => {
               <div>
                 <img
                   className='rounded-xl hover:scale-105 ease-in duration-300'
-                  src='https://picsum.photos/id/486/600'
+                  src='https://picsum.photos/id/486/800'
                   alt='/'
                 />
               </div>

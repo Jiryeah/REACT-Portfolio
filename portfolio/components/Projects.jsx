@@ -15,25 +15,25 @@ const Projects = () => {
           <ProjectItem
             title='Tech Blog'
             backgroundImg={techBlogImg}
-            projectUrl='/Blog'
+            projectUrl='/blog'
             techUsed='Spring Framework & ThymeLeaf'
           />
           <ProjectItem
             title='QA Assurance App'
             backgroundImg={FimiQA}
-            projectUrl='/Assurance'
+            projectUrl='/assurance'
             techUsed='JavaScript MVC, MySQL DB, Sequelize, Express.js, Handlebars.js'
           />
           <ProjectItem
             title='Google Books Search Engine'
             backgroundImg={GoogleAPI}
-            projectUrl='/Book'
+            projectUrl='/book'
             techUsed='MERN'
           />
           <ProjectItem
             title='E-commerce Shop'
             backgroundImg={ECommerce}
-            projectUrl='/Shop'
+            projectUrl='/shop'
             techUsed='MERN'
           />
         </div>

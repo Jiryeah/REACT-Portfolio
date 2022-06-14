@@ -27,12 +27,16 @@ const Main = () => {
             my back-end knowledge through Java and the awesome Spring Framework.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <FaLinkedinIn />
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <FaGithub />
-            </div>
+            <a href='https://www.linkedin.com/in/FaissalShabani' target='_blank' rel='noreferrer'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                <FaLinkedinIn />
+              </div>
+            </a>
+            <a href='https://github.com/Jiryeah' target='_blank' rel='noreferrer'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                <FaGithub />
+              </div>
+            </a>
             <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
               <AiOutlineMail />
             </div>

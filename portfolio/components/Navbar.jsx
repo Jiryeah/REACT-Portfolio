@@ -27,7 +27,11 @@ const Navbar = () => {
   return (
     <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <Image src='/../public/assets/navLogo.png' alt='/' width='125' height='50' />
+        <div className='hover:border-b cursor-pointer'>
+          <Link href='/'>
+            <Image src='/../public/assets/navLogo.png' alt='/' width='125' height='50' />
+          </Link>
+        </div>
         <div>
           <ul className='hidden md:flex'>
             <Link href='/'>
@@ -46,7 +50,7 @@ const Navbar = () => {
               <li className='ml-10 text-sm uppercase hover:border-b'>Contact</li>
             </Link>
           </ul>
-          <div onClick={handleNavigation} className='md:hidden'>
+          <div onClick={handleNavigation} className='md:hidden cursor-pointer'>
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -62,7 +66,15 @@ const Navbar = () => {
         >
           <div>
             <div className='flex w-full items-center justify-between '>
-              <Image src='/../public/assets/navLogo.png' width='100' height='35' alt='/' />
+              <Link href='/'>
+                <Image
+                  className='cursor-pointer'
+                  src='/../public/assets/navLogo.png'
+                  width='100'
+                  height='35'
+                  alt='/'
+                />
+              </Link>
               <div
                 onClick={handleNavigation}
                 className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
@@ -77,30 +89,48 @@ const Navbar = () => {
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
               <Link href='/'>
-                <li className='py-4 text-sm'>Home</li>
+                <li onClick={() => setNavigation(false)} className='py-4 text-sm'>
+                  Home
+                </li>
               </Link>
-              <Link href='/'>
-                <li className='py-4 text-sm'>About</li>
+              <Link href='/#about'>
+                <li onClick={() => setNavigation(false)} className='py-4 text-sm'>
+                  About
+                </li>
               </Link>
-              <Link href='/'>
-                <li className='py-4 text-sm'>Skills</li>
+              <Link href='/#skills'>
+                <li onClick={() => setNavigation(false)} className='py-4 text-sm'>
+                  Skills
+                </li>
               </Link>
-              <Link href='/'>
-                <li className='py-4 text-sm'>Project</li>
+              <Link href='/#projects'>
+                <li onClick={() => setNavigation(false)} className='py-4 text-sm'>
+                  Project
+                </li>
               </Link>
-              <Link href='/'>
-                <li className='py-4 text-sm'>Contact</li>
+              <Link href='/#contact'>
+                <li onClick={() => setNavigation(false)} className='py-4 text-sm'>
+                  Contact
+                </li>
               </Link>
             </ul>
             <div className='pt-40'>
               <p className='uppercase tracking-widest text-blue-500'>Let's Connect</p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaLinkedinIn />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaGithub />
-                </div>
+                <a
+                  href='https://www.linkedin.com/in/FaissalShabani'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <FaLinkedinIn />
+                  </div>
+                </a>
+                <a href='https://github.com/Jiryeah' target='_blank' rel='noreferrer'>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <FaGithub />
+                  </div>
+                </a>
                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                   <AiOutlineMail />
                 </div>
