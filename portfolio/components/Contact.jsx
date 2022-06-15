@@ -14,21 +14,14 @@ const Contact = () => {
     message: '',
   });
 
+  const { name, number, email, subject, message } = formState;
+
   // Update inputs value
   const handleFormChange = () => (e) => {
-    const name = e.target.name;
-    const number = e.target.number;
-    const email = e.target.email;
-    const subject = e.target.subject;
-    const message = e.target.subject;
-    const value = e.target.value;
+    const { name, value } = e.target;
     setFormState((prevState) => ({
       ...prevState,
       [name]: value,
-      [number]: value,
-      [email]: value,
-      [subject]: value,
-      [message]: value,
     }));
   };
   // Form Submit function
@@ -120,18 +113,18 @@ const Contact = () => {
                       type='text'
                       name='name'
                       required
-                      value={formState.name}
+                      value={name}
                       onChange={handleFormChange()}
                     />
                   </div>
                   <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>Number</label>
+                    <label className='uppercase text-sm py-2'>Phone Number</label>
                     <input
                       className='border-2 rounded-lg p-3 flex border-gray-300'
                       type='tel'
                       name='number'
                       required
-                      value={formState.number}
+                      value={number}
                       onChange={handleFormChange()}
                     />
                   </div>
@@ -142,8 +135,7 @@ const Contact = () => {
                     className='border-2 rounded-lg p-3 flex border-gray-300'
                     type='email'
                     name='email'
-                    required
-                    value={formState.email}
+                    value={email}
                     onChange={handleFormChange()}
                   />
                 </div>
@@ -154,7 +146,7 @@ const Contact = () => {
                     type='subject'
                     name='subject'
                     required
-                    value={formState.subject}
+                    value={subject}
                     onChange={handleFormChange()}
                   />
                 </div>
@@ -165,7 +157,7 @@ const Contact = () => {
                     rows='10'
                     name='message'
                     required
-                    value={formState.message}
+                    value={message}
                     onChange={handleFormChange()}
                   ></textarea>
                 </div>
