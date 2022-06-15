@@ -64,9 +64,9 @@ I have created this application to not only challenge myself, but to also showca
 - Tailwind
 - GetForm io
 
-### Contributors
+### Contributor
 
-- None
+- Faissal Shabani
 
 ## Questions
 
