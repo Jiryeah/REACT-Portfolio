@@ -3,7 +3,9 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Link from 'next/link';
+import Image from 'next/image';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import Typewriter from '../public/assets/contact.png';
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -46,10 +48,10 @@ const Contact = () => {
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
             <div className='lg:p-4 h-full'>
               <div>
-                <img
+                <Image
                   className='rounded-xl hover:scale-105 ease-in duration-300'
-                  src='https://picsum.photos/id/486/800'
-                  alt='/'
+                  src={Typewriter}
+                  layout='responsive'
                 />
               </div>
               <div>
