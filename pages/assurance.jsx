@@ -23,8 +23,8 @@ const assurance = () => {
             This application was created to assist companies in managing their QA(Quality Assurance)
             departments. Companies struggle with buying expensive software to handle these issues,
             or they typically revert to using Excel to monitor all QA auditing and tracking. With
-            this application, a QA supervisor/manager can login and track all of the employee's
-            within their assigned scope. Once logged in, they can also add and look up employee's
+            this application, a QA supervisor/manager can login and track all of the employees
+            within their assigned scope. Once logged in, they can also add and look up employees
             while also being able to see the respective work-related details. This application also
             allows an excel spreadsheet of the current work flow to be downloaded. This will
             optimize the teams time on auditing and maintaining quality standards, rather than

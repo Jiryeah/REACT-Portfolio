@@ -14,15 +14,14 @@ const About = () => {
           </p>
           <p className='py-2 text-gray-600'>
             Many in my generation, if they remember, can admit to manipulating their first bit of
-            HTML on old myspace profiles. I used to be the kid in the neighborhood who loved to do
-            that for myself, and others. I didn't quite understand what I was doing, but it was far
-            from programming. With a nack for problem solving, and a passion for technology, it
-            wasn't long before I decided to pursue development in it's entirety. I have since given
-            up myspace HTML edits for databases in SQL and API's in Spring Boot. I can now do more
-            with a website appearance through React, than I could have ever imagined. The same
-            curiosity that drew me into this field, has humbled me by it's never ending evolution in
-            knowledge and growth. I love programming because I can solve problems that can benefit
-            many.
+            HTML on old myspace profiles. I was the kid in the neighborhood who loved to do that for
+            myself, and others. I didn't quite understand what I was doing, but it was far from
+            programming. With a nack for problem solving, and a passion for technology, it wasn't
+            long before I decided to pursue development in it's entirety. I have since given up
+            myspace HTML edits for databases in SQL and API's in Spring Boot. I can now do more with
+            a website appearance through React, than I could have ever imagined. The same curiosity
+            that drew me into this field, has humbled me by it's never ending evolution in knowledge
+            and growth. I love programming because I can solve problems that can benefit many.
           </p>
           <br />
           <p className='py-2 text-gray-600'>
