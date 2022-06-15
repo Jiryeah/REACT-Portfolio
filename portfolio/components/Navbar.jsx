@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
@@ -8,6 +9,24 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 const Navbar = () => {
   const [navigation, setNavigation] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navigationBackground, setNavigationBackground] = useState('#ecf0f3');
+  const [linkColor, setLinkColor] = useState('#1f2937');
+  const router = useRouter();
+
+  useEffect(() => {
+    if (
+      router.asPath === '/blog' ||
+      router.asPath === '/assurance' ||
+      router.asPath === '/book' ||
+      router.asPath === '/shop'
+    ) {
+      setNavigationBackground('transparent');
+      setLinkColor('#ecf0f3');
+    } else {
+      setNavigationBackground('#ecf0f3');
+      setLinkColor('#1f2937');
+    }
+  }, [router]);
 
   const handleNavigation = () => {
     setNavigation(!navigation);
@@ -25,7 +44,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
+    <div
+      style={{ backgroundColor: `${navigationBackground}` }}
+      className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}
+    >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <div className='cursor-pointer'>
           <Link href='/'>
@@ -33,7 +55,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div>
-          <ul className='hidden md:flex'>
+          <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
             <Link href='/'>
               <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
             </Link>
