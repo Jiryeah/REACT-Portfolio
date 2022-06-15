@@ -30,8 +30,16 @@ const shop = () => {
             the user from potential connectivity issues, IndexedDB has been implemented to insure
             the user can continue to shop even during times of abrupt connectivity.
           </p>
-          <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-          <button className='px-8 py-2 mt-4'>Source Code</button>
+          <a
+            href='https://ecommerce-shopify-attempt.herokuapp.com/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+          </a>
+          <a href='https://github.com/Jiryeah/shop-shop' target='_blank' rel='noreferrer'>
+            <button className='px-8 py-2 mt-4'>Source Code</button>
+          </a>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>

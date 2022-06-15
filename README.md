@@ -62,6 +62,7 @@ I have created this application to not only challenge myself, but to also showca
 - React
 - Next.js
 - Tailwind
+- GetForm io
 
 ### Contributors
 

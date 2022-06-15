@@ -27,8 +27,12 @@ const blog = () => {
             have an interest with. Once logged out, the dashboard will show prior posts and
             activity. However, you must be logged in to interact with other users.
           </p>
-          <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-          <button className='px-8 py-2 mt-4'>Source Code</button>
+          <a href='https://cc-java-blog-api.herokuapp.com/' target='_blank' rel='noreferrer'>
+            <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+          </a>
+          <a href='https://github.com/Jiryeah/tech-news-java-api' target='_blank' rel='noreferrer'>
+            <button className='px-8 py-2 mt-4'>Source Code</button>
+          </a>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>
