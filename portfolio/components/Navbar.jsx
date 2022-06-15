@@ -161,14 +161,18 @@ const Navbar = () => {
                     <AiOutlineMail />
                   </div>
                 </Link>
-                <Link href='/resume'>
+                <a
+                  href='https://docs.google.com/document/d/1AFBm4HbwnPqSbN7Za4Y58EtE6viWyiJrTl7TcndP-Mg/edit?usp=sharing'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <div
                     onClick={() => setNavigation(!navigation)}
-                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                    className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'
                   >
                     <BsFillPersonLinesFill />
                   </div>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

@@ -6,18 +6,42 @@ import Link from 'next/link';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+  const [formState, setFormState] = useState({
+    name: '',
+    number: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
 
-  const handleFormSubmit = () => {
-    setName('');
-    setPhoneNumber('');
-    setEmail('');
-    setSubject('');
-    setMessage('');
+  // Update inputs value
+  const handleFormChange = () => (e) => {
+    const name = e.target.name;
+    const number = e.target.number;
+    const email = e.target.email;
+    const subject = e.target.subject;
+    const message = e.target.subject;
+    const value = e.target.value;
+    setFormState((prevState) => ({
+      ...prevState,
+      [name]: value,
+      [number]: value,
+      [email]: value,
+      [subject]: value,
+      [message]: value,
+    }));
+  };
+  // Form Submit function
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+    Object.entries(formState).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
+    fetch('https://getform.io/f/877f28ae-3bf6-4442-93bd-e4eabd28321e', {
+      method: 'POST',
+      body: formData,
+    }).then(() => setFormState({ name: '', number: '', email: '', subject: '', message: '' }));
   };
 
   return (
@@ -67,11 +91,15 @@ const Contact = () => {
                       <AiOutlineMail />
                     </div>
                   </Link>
-                  <Link href='/resume'>
+                  <a
+                    href='https://docs.google.com/document/d/1AFBm4HbwnPqSbN7Za4Y58EtE6viWyiJrTl7TcndP-Mg/edit?usp=sharing'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <BsFillPersonLinesFill />
                     </div>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -81,7 +109,7 @@ const Contact = () => {
             <div className='p-4'>
               <form
                 onSubmit={handleFormSubmit}
-                action='https://getform.io/f/79523529-7f3c-4bac-b535-b7d702555d34'
+                action='https://getform.io/f/877f28ae-3bf6-4442-93bd-e4eabd28321e'
                 method='POST'
               >
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
@@ -91,18 +119,20 @@ const Contact = () => {
                       className='border-2 rounded-lg p-3 flex border-gray-300'
                       type='text'
                       name='name'
-                      value={name}
-                      onChange={(event) => setName(event.target.value)}
+                      required
+                      value={formState.name}
+                      onChange={handleFormChange()}
                     />
                   </div>
                   <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>Phone Number</label>
+                    <label className='uppercase text-sm py-2'>Number</label>
                     <input
                       className='border-2 rounded-lg p-3 flex border-gray-300'
-                      type='text'
-                      name='phone'
-                      value={phoneNumber}
-                      onChange={(event) => setPhoneNumber(event.target.value)}
+                      type='tel'
+                      name='number'
+                      required
+                      value={formState.number}
+                      onChange={handleFormChange()}
                     />
                   </div>
                 </div>
@@ -110,20 +140,22 @@ const Contact = () => {
                   <label className='uppercase text-sm py-2'>Email</label>
                   <input
                     className='border-2 rounded-lg p-3 flex border-gray-300'
-                    type='text'
+                    type='email'
                     name='email'
-                    value={email}
-                    onChange={(event) => setEmail(event.target.value)}
+                    required
+                    value={formState.email}
+                    onChange={handleFormChange()}
                   />
                 </div>
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>Subject</label>
                   <input
                     className='border-2 rounded-lg p-3 flex border-gray-300'
-                    type='text'
+                    type='subject'
                     name='subject'
-                    value={subject}
-                    onChange={(event) => setSubject(event.target.value)}
+                    required
+                    value={formState.subject}
+                    onChange={handleFormChange()}
                   />
                 </div>
                 <div className='flex flex-col py-2'>
@@ -132,8 +164,9 @@ const Contact = () => {
                     className='border-2 rounded-lg p-3 border-gray-300'
                     rows='10'
                     name='message'
-                    value={message}
-                    onChange={(event) => setMessage(event.target.value)}
+                    required
+                    value={formState.message}
+                    onChange={handleFormChange()}
                   ></textarea>
                 </div>
                 <button className='w-full p-4 text-gray-100 mt-4'>Send Message</button>
