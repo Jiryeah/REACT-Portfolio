@@ -22,7 +22,7 @@ const Projects = () => {
             title='QA Assurance App'
             backgroundImg={FimiQA}
             projectUrl='/assurance'
-            techUsed='JavaScript MVC, MySQL DB, Sequelize, Express.js, Handlebars.js'
+            techUsed='MVC'
           />
           <ProjectItem
             title='Google Books Search Engine'

@@ -1,7 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
-import ProjectItem from '../components/ProjectItem';
-
+import { RiRadioButtonFill } from 'react-icons/ri';
 import techBlogImg from '../public/assets/projects/techblog-screenshot.png';
 
 const blog = () => {
@@ -20,21 +20,50 @@ const blog = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This Blog was built using Spring Boot, Spring Web, Spring JPA, MySQL, and ThymeLeaf.
-            Users can create an account, or login, to be taken to their home page. Users can make a
-            post(s) and add a URL that contains any information pertaining to their post(s).
-            Different users can comment on each others posts and upvote posts that they have an
-            interest with. Once logged out, the dashboard will show prior posts and activity.
-            However, you must be logged in to interact with other users.
+            This Blog was built using the Spring Framework, ThymeLeaf for the template, and MySQL
+            for the database. Users can create an account, or login, to be taken to their home page.
+            Users can make a post(s) and add a URL that contains any information pertaining to their
+            post(s). Different users can comment on each others posts and upvote posts that they
+            have an interest with. Once logged out, the dashboard will show prior posts and
+            activity. However, you must be logged in to interact with other users.
           </p>
           <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
           <button className='px-8 py-2 mt-4'>Source Code</button>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>
-            <p>Technologies</p>
+            <p className='text-center font-bold pb-2'>Technologies</p>
+            <div className='grid grid-cols-3 md:grid-cols-1'>
+              <p className='text-gray-600 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> JavaScript
+              </p>
+              <p className='text-gray-600 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> CSS
+              </p>
+              <p className='text-gray-600 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Java
+              </p>
+              <p className='text-gray-600 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Spring Framework
+              </p>
+              <p className='text-gray-600 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Maven
+              </p>
+              <p className='text-gray-600 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> MySQL
+              </p>
+              <p className='text-gray-600 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> ThymeLeaf
+              </p>
+              <p className='text-gray-600 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Heroku
+              </p>
+            </div>
           </div>
         </div>
+        <Link href='/#projects'>
+          <p className='underline cursor-pointer'>Back</p>
+        </Link>
       </div>
     </div>
   );
