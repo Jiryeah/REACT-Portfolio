@@ -52,6 +52,7 @@ const Contact = () => {
                   className='rounded-xl hover:scale-105 ease-in duration-300'
                   src={Typewriter}
                   layout='responsive'
+                  alt='/'
                 />
               </div>
               <div>

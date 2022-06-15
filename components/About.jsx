@@ -10,7 +10,7 @@ const About = () => {
           <p className='uppercase text-xl tracking-widest text-blue-500'>About</p>
           <h2 className='py-4'>Who I am</h2>
           <p className='py-2 text-gray-600'>
-            // The <span className='text-black'>thrill</span> of problem solving
+            The <span className='text-black'>thrill</span> of problem solving
           </p>
           <p className='py-2 text-gray-600'>
             Many in my generation, if they remember, can admit to manipulating their first bit of
