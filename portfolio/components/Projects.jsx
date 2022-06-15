@@ -22,19 +22,19 @@ const Projects = () => {
             title='QA Assurance App'
             backgroundImg={FimiQA}
             projectUrl='/assurance'
-            techUsed='MVC'
+            techUsed='JavaScript MVC'
           />
           <ProjectItem
             title='Google Books Search Engine'
             backgroundImg={GoogleAPI}
             projectUrl='/book'
-            techUsed='MERN'
+            techUsed='MERN & GraphQL'
           />
           <ProjectItem
             title='E-commerce Shop'
             backgroundImg={ECommerce}
             projectUrl='/shop'
-            techUsed='MERN'
+            techUsed='MERN & GraphQL'
           />
         </div>
       </div>
