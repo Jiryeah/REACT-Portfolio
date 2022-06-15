@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -32,9 +33,11 @@ const About = () => {
             to the awesome Front-end developers out there. I intend to solidify my back-end
             foundational skills by learning: AWS, Docker, and also TypeScript.
           </p>
-          <p className='py-2 text-gray-600 underline cursor-pointer'>
-            Check out some of my latest projects
-          </p>
+          <Link href='/#projects'>
+            <p className='py-2 text-gray-600 underline cursor-pointer'>
+              Check out some of my latest projects
+            </p>
+          </Link>
         </div>
         <div
           className='
