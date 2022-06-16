@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import navLogo from '../public/assets/navLogo.png';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
@@ -51,7 +52,7 @@ const Navbar = () => {
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <div className='cursor-pointer'>
           <Link href='/'>
-            <Image src='/../public/assets/navLogo.png' alt='/' width='125' height='50' />
+            <Image src={navLogo} alt='/' width='125' height='50' />
           </Link>
         </div>
         <div>
@@ -89,13 +90,7 @@ const Navbar = () => {
           <div>
             <div className='flex w-full items-center justify-between '>
               <Link href='/'>
-                <Image
-                  className='cursor-pointer'
-                  src='/../public/assets/navLogo.png'
-                  width='100'
-                  height='35'
-                  alt='/'
-                />
+                <Image className='cursor-pointer' src={navLogo} width='100' height='35' alt='/' />
               </Link>
               <div
                 onClick={handleNavigation}
