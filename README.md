@@ -13,9 +13,12 @@
 
 
 ### Install
+1. Clone repo
+2. Install Dependencies
 ```md
 npm i
 ```
+3. Run app and go to localhost:3000.
 ```md
 npm run dev
 ```
