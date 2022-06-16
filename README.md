@@ -2,12 +2,25 @@
 
 ## Table of Contents
 
+- [Install](#Install)
 - [Deployed Application](#Application)
 - [Summary](#Summary)
 - [User Story](#User-Story)
 - [Requirements](#Requirements)
 - [Technologies](#Technologies)
+- [Screenshot](#Screenshot)
 - [Contact](#Contact)
+
+
+### Install
+```md
+npm i
+```
+```md
+npm run dev
+```
+
+
 
 ### Summary
 
@@ -51,9 +64,13 @@ I have created this application to not only challenge myself, but to also showca
 - THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 ```
 
-### Application
+### Deployed Application
 
--
+- https://faissal-shabani-portfolio.netlify.app/
+
+### Screenshot
+- <img width="1440" alt="Screen Shot 2022-06-16 at 3 12 27 PM" src="https://user-images.githubusercontent.com/92201576/174155868-827f19ae-59dc-4d4e-b567-70f8afc39fd3.png">
+
 
 ### Technologies
 
