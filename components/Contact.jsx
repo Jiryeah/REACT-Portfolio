@@ -16,6 +16,7 @@ const Contact = () => {
     message: '',
   });
 
+  // destructured name, number, email, subject, message out from formState.
   const { name, number, email, subject, message } = formState;
 
   // Update inputs value
@@ -57,13 +58,17 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className='py-2'>Faissal Shabani</h2>
-                <p>Full-Stack Developer</p>
+                <p>Full-Stack Web Developer</p>
                 <p className='py-4'>
-                  <span className='text-blue-500'>Availability</span>: freelance or full-time
+                  <span className='text-grey-400'>Availability</span>: freelance or full-time
                   positions.
                   <br />
                   Contact me and let's talk.
                 </p>
+                <email>
+                  {' '}
+                  Email: <span className='text-blue-500'>faissalshabani@gmail.com</span>
+                </email>
               </div>
               <div>
                 <p className='uppercase pt-8'>Connect with Me</p>
