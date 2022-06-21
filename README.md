@@ -11,19 +11,19 @@
 - [Screenshot](#Screenshot)
 - [Contact](#Contact)
 
-
 ### Install
+
 1. Clone repo
 2. Install Dependencies
+3. Run app and go to localhost:3000.
+
 ```md
 npm i
 ```
-3. Run app and go to localhost:3000.
+
 ```md
 npm run dev
 ```
-
-
 
 ### Summary
 
@@ -72,8 +72,8 @@ I have created this application to not only challenge myself, but to also showca
 - https://faissal-shabani-portfolio.netlify.app/
 
 ### Screenshot
-<img width="1440" alt="Screen Shot 2022-06-16 at 3 12 27 PM" src="https://user-images.githubusercontent.com/92201576/174155868-827f19ae-59dc-4d4e-b567-70f8afc39fd3.png">
 
+<img width="1440" alt="Screen Shot 2022-06-16 at 3 12 27 PM" src="https://user-images.githubusercontent.com/92201576/174155868-827f19ae-59dc-4d4e-b567-70f8afc39fd3.png">
 
 ### Technologies
 
