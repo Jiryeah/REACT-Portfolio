@@ -37,7 +37,7 @@ const shop = () => {
           >
             <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
           </a>
-          <a href='https://github.com/Jiryeah/shop-shop' target='_blank' rel='noreferrer'>
+          <a href='https://github.com/ZairesDev/shop-shop' target='_blank' rel='noreferrer'>
             <button className='px-8 py-2 mt-4'>Source Code</button>
           </a>
         </div>
