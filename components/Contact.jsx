@@ -60,14 +60,14 @@ const Contact = () => {
                 <h2 className='py-2'>Faissal Shabani</h2>
                 <p>Full-Stack Web Developer</p>
                 <p className='py-4'>
-                  <span className='text-grey-400'>Availability</span>: freelance or full-time
+                  <span className='text-grey-400'>Availability</span>: Full-time
                   positions.
                   <br />
                   Contact me and let's talk.
                 </p>
                 <email>
                   {' '}
-                  Email: <span className='text-blue-500'>faissalshabani@gmail.com</span>
+                  Email: <span className='text-blue-500'>business.faissal@outlook.com</span>
                 </email>
               </div>
               <div>
