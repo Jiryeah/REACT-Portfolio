@@ -16,6 +16,10 @@ import Node from '../public/assets/skills/node.png';
 import Reactjs from '../public/assets/skills/react-icon.png';
 import Tailwind from '../public/assets/skills/tailwind-icon.png';
 import Spring from '../public/assets/skills/spring-framework-icon.png';
+import TypeScript from '../public/assets/skills/typescript.png'
+import CSharp from '../public/assets/skills/CSharp.png'
+import NET from '../public/assets/skills/NET.png'
+import SharePoint from '../public/assets/skills/sharepoint.png'
 
 const Skills = () => {
   return (
@@ -46,16 +50,6 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image src={GitHub} width='64px' height='64px' alt='/' />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>GitHub</h3>
-              </div>
-            </div>
-          </div>
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
@@ -125,17 +119,6 @@ const Skills = () => {
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
-                <Image src={MUI} width='64px' height='64px' alt='/' />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>Material UI</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
                 <Image src={MySQL} width='64px' height='64px' alt='/' />
               </div>
               <div className='flex flex-col items-center justify-center'>
@@ -180,6 +163,17 @@ const Skills = () => {
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div className='m-auto'>
+                <Image src={SharePoint} width='64px' height='64px' alt='/' />
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>SharePoint</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='m-auto'>
                 <Image src={Spring} width='64px' height='64px' alt='/' />
               </div>
               <div className='flex flex-col items-center justify-center'>
@@ -195,6 +189,42 @@ const Skills = () => {
               </div>
               <div className='flex flex-col items-center justify-center'>
                 <h3>Tailwind CSS</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='m-auto'>
+                <Image src={TypeScript} width='64px' height='64px' alt='/' />
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>TypeScript</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 className='py-4'>In Progress...</h2>
+        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
+          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='m-auto'>
+                <Image src={CSharp} width='64px' height='64px' alt='/' />
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>C#</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='m-auto'>
+                <Image src={NET} width='64px' height='64px' alt='/' />
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>.NET Framework</h3>
               </div>
             </div>
           </div>
