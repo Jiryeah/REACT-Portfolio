@@ -15,7 +15,7 @@ const About = () => {
           </p>
           <p className='py-2 text-gray-600'>
           Hey there! <span className='font-bold text-black italic'>The truth is, I'm obsessed with solving problems that benefit others. So, although I'm grateful that you're about to read my mini-bibliography below, I just like to solve problems that help people first and foremost. </span>
-          I’ve been around the software block for a while, dabbling in front-end wizardry. But you know what? Back-end tech has always whispered sweet nothings to me. So, I’m ready to wade into those server-side waters and broaden my horizons. Let’s build some magic that! 🚀
+          <span className='font-bold text-red uppercase text-xl'> AS OF NOW, THIS PORTFOLIO SITE IS UNDER CONSTRUCTION. It is getting rebuilt with SvelteKit & TypeScript.</span>
           </p>
           <h3>MERN Stack Foundation: </h3>
           <p className='py-2 text-gray-600'>
