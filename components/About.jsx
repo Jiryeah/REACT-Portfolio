@@ -13,11 +13,10 @@ const About = () => {
           <p className='py-2 text-gray-600 italic text-lg'>
             The <span className='text-black'>thrill</span> of problem solving
           </p>
-          <p className='py-2 text-gray-600'>
-          Hey there! <span className='font-bold text-black italic'>The truth is, I'm obsessed with solving problems that benefit others. So, although I'm grateful that you're about to read my mini-bibliography below, I just like to solve problems that help people first and foremost. </span>
-          <span className='font-bold text-red uppercase text-xl'> AS OF NOW, THIS PORTFOLIO SITE IS UNDER CONSTRUCTION. It is getting rebuilt with SvelteKit & TypeScript.</span>
+          <p className='py-2 font-bold text-red-600 uppercase text-xl'>
+            THIS PORTFOLIO SITE IS UNDER CONSTRUCTION. It is getting rebuilt with SvelteKit & TypeScript.
           </p>
-          <h3>MERN Stack Foundation: </h3>
+          {/* <h3>MERN Stack Foundation: </h3>
           <p className='py-2 text-gray-600'>
           I’ve crafted interactive websites that seamlessly function across all devices and platforms using the MERN (MongoDB, Express.js, React, Node.js) stack.
           Front-end development was my starting point, but I soon realized that my true passion lies in the intricate world of back-end logic.
@@ -45,7 +44,7 @@ const About = () => {
             <p className='py-2 text-gray-600 underline cursor-pointer'>
               Check out some of my latest projects
             </p>
-          </Link>
+          </Link> */}
         </div>
         <div
           className='
